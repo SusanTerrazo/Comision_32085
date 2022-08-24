@@ -1,0 +1,21 @@
+div(class="jumbotron")
+    h1(style="color:blue;") INGRESE PRODUCTOS
+    br
+    form(action="/productos" method="post")
+        div(class="form-group")
+            label(for="producto")
+                b Producto
+            input(id="producto" class="form-control" type="text" name="producto" onchange="")
+                    
+        div(class="form-group")
+            label(for="precio")
+                b Precio
+            input(id="precio" class="form-control" type="number" name="precio")
+                    
+        
+        div(class="form-group")
+            label(for="imagen")
+                b Imagen
+            input#imagen.form-control(type="text" name="imagen")
+                    
+        button(class="btn btn-success mt-3 mb-5") Enviar

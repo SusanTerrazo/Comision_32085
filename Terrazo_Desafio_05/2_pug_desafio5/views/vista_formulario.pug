@@ -1,0 +1,9 @@
+extends layouts/main 
+
+block vista 
+
+    include partials/formulario.pug    
+    button.btn.btn-secondary(type='button' disabled='') Formulario
+    
+    a(href='/productos')
+        button.btn.btn-secondary(type='button') Listado
